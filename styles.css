@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  --box-width: 2rem;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: bisque;
+  color: brown;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 32rem;
+  height: 32rem;
+}
+
+.box {
+  background-color: white;
+  border: 1px solid black;
+  width: var(--box-width);
+  height: var(--box-width);
+  
+  transition: background-color 2s 0.1s;
+}
+
+.box:hover {
+  transition: background-color 0.02s;
+}
